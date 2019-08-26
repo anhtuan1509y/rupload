@@ -163,7 +163,7 @@ router.post('/update/:id', upload.single('uAvatar'), function (req, res, next) {
               if(err){
                 return console.log('err query',err);
               }
-              console.log("update success")
+              res.send("update success")
               });
           });
         }
